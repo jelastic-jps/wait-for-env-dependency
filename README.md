@@ -21,7 +21,7 @@ In the opened confirmation window:
 
 <p align="center"><img src="images/run-additional-script.png" align="center" width="500"/></p>
 
-  5. If you want to prevent the target environment from starting when all wait conditions have failed and the associated environment is non-operational, uncheck the **Start Despite Failure** option. The appropriate warning message will indicate the reason why the environment can't start. However, please note that disabling this option may prevent the target environment from running at all if the associated environment is deleted or broken. In such cases, use the [GetList](https://docs.jelastic.com/api/#!/api/marketplace.Installation-method-GetList) API to retrieve the add-on ID (appUniqueName), and then use the [Uninstall](https://docs.jelastic.com/api/#!/api/marketplace.Installation-method-Uninstall) API to remove the add-on.
+  5. If you want to prevent the target environment from starting when all wait conditions have failed and the associated environment is non-operational, uncheck the **Start Despite Failure** option. The appropriate warning message will indicate the reason why the environment can't start. However, please note that disabling this option may prevent the target environment from running at all if the associated environment is deleted or broken. In such cases, use the [GetAddonList](https://docs.jelastic.com/api/#!/api/marketplace.App-method-GetAddonList) API to retrieve the add-on ID (appUniqueName), and then use the [Uninstall](https://docs.jelastic.com/api/#!/api/marketplace.Installation-method-Uninstall) API to remove the add-on.
   
   6. Upon completion of the installation, the installed add-on can be observed within the **Add-Ons** panel of the selected node group in the target environment.
 
